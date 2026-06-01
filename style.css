@@ -1124,4 +1124,13 @@ button.btn:hover {
   .flex-section-body h2 { text-align: center; }
   .contact-container { flex-direction: column; }
   .contact-form-wrap { flex: 1 1 auto; max-width: 100%; width: 100%; }
+
+  /* Responsive new sections */
+  .video-flexbox { flex-direction: column; gap: 2rem; }
+  .video-container { aspect-ratio: auto; min-height: 250px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .featured-tiles-grid { grid-template-columns: 1fr; }
+  .featured-tile { padding: 1.5rem; }
+  .featured-tile-icon { font-size: 2.5rem; }
+  .featured-tile h3 { font-size: 1.3rem; }
 }
