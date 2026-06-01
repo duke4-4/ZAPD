@@ -213,6 +213,56 @@ function initTeamModals() {
   });
 }
 
+/** Tab switching for About page resources section */
+function initTabSwitching() {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  if (tabButtons.length === 0) return;
+
+  tabButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const tabName = button.getAttribute('data-tab');
+
+      // Remove active class from all buttons and contents
+      document.querySelectorAll('.tab-button').forEach((btn) => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach((content) => content.classList.remove('active'));
+
+      // Add active class to clicked button and corresponding content
+      button.classList.add('active');
+      const tabContent = document.getElementById(tabName);
+      if (tabContent) tabContent.classList.add('active');
+    });
+  });
+}
+
+/** Event filtering on Events page */
+function initEventFilters() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const eventCards = document.querySelectorAll('.event-card');
+
+  if (filterButtons.length === 0 || eventCards.length === 0) return;
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+
+      // Update active button
+      filterButtons.forEach((btn) => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Filter events
+      eventCards.forEach((card) => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.style.display = '';
+          card.style.animation = 'fadeIn 0.3s ease';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   setHeaderHeight();
   updateCopyrightYear();
@@ -221,6 +271,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroSlideshow();
   initFaqAccordion();
   initTeamModals();
+  initTabSwitching();
+  initEventFilters();
 
   const headerEl = document.querySelector('.site-header');
   if (headerEl && window.ResizeObserver) {
