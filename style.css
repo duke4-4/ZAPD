@@ -3,12 +3,16 @@
   --color-red: #c92f39;
   --color-green: #90c240;
   --color-lightblue: #457397;
-  --color-darkblue: #074474;
+  --color-darkblue: #003366;
   --color-white: #ffffff;
   --color-light-gray: #f5f7f9;
   --color-footer-bg: #eef3f8;
   --color-text: #333333;
   --color-yellow-soft: rgba(238, 189, 53, 0.14);
+  --color-pastel-blue: #e6f0f7;
+  --color-pastel-cream: #fef9f3;
+  --color-pastel-mint: #e8f5f0;
+  --color-pastel-lavender: #f0e6f7;
   --header-height: 88px;
   --font-heading: 'Be Vietnam Pro', sans-serif;
   --font-body: 'Nunito Sans', sans-serif;
@@ -95,7 +99,7 @@ button.btn {
   align-items: center;
   justify-content: center;
   padding: 1rem 2.4rem;
-  border-radius: 50px;
+  border-radius: 60px;
   font-weight: 700;
   font-size: 1.05rem;
   cursor: pointer;
@@ -194,7 +198,7 @@ button.btn:hover {
   min-height: 280px;
   max-height: 420px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 20px;
   box-shadow: 0 12px 32px rgba(7, 68, 116, 0.12);
 }
 .flex-section-body {
@@ -334,7 +338,7 @@ button.btn:hover {
 
 /* Info Section */
 .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
-.info-card { background: var(--color-white); padding: 3rem 2.5rem; border-radius: 20px; text-align: center; transition: all 0.4s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.04); border-bottom: 5px solid transparent; overflow: hidden; position: relative; }
+.info-card { background: var(--color-white); padding: 3rem 2.5rem; border-radius: 24px; text-align: center; transition: all 0.4s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.04); border-bottom: 5px solid transparent; overflow: hidden; position: relative; }
 .info-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; }
 .info-card:nth-child(1)::before { background-color: var(--color-yellow); }
 .info-card:nth-child(2)::before { background-color: var(--color-red); }
@@ -351,7 +355,7 @@ button.btn:hover {
 }
 .team-card {
   background: var(--color-white);
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 28px rgba(7, 68, 116, 0.08);
   text-align: center;
@@ -396,7 +400,7 @@ button.btn:hover {
 .team-modal-dialog {
   position: relative;
   background: var(--color-white);
-  border-radius: 16px;
+  border-radius: 20px;
   max-width: 520px;
   width: 100%;
   max-height: 90vh;
@@ -433,7 +437,7 @@ button.btn:hover {
 
 /* FAQ Section */
 .faq-accordion { max-width: 800px; margin: 0 auto; }
-.faq-item { background: var(--color-white); margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.03); overflow: hidden; border-left: 4px solid transparent; transition: border-color 0.2s ease; }
+.faq-item { background: var(--color-white); margin-bottom: 1rem; border-radius: 14px; box-shadow: 0 4px 10px rgba(0,0,0,0.03); overflow: hidden; border-left: 4px solid transparent; transition: border-color 0.2s ease; }
 .faq-item:nth-child(1).active { border-left-color: var(--color-yellow); }
 .faq-item:nth-child(2).active { border-left-color: var(--color-red); }
 .faq-item:nth-child(3).active { border-left-color: var(--color-green); }
@@ -457,7 +461,7 @@ button.btn:hover {
   background: var(--color-darkblue);
   color: var(--color-white);
   text-align: center;
-  border-radius: 20px;
+  border-radius: 24px;
   margin: 4rem 5%;
   padding: 4rem 2rem;
   box-shadow: 0 16px 32px rgba(7, 68, 116, 0.18);
@@ -468,7 +472,7 @@ button.btn:hover {
   font-size: 2.5rem;
 }
 .newsletter-form { display: flex; max-width: 500px; margin: 2rem auto 0; gap: 10px; }
-.newsletter-form input { flex: 1; padding: 1rem 1.5rem; border-radius: 50px; border: none; font-size: 1rem; font-family: var(--font-body); }
+.newsletter-form input { flex: 1; padding: 1rem 1.5rem; border-radius: 60px; border: none; font-size: 1rem; font-family: var(--font-body); }
 .newsletter-form .btn {
   padding: 1rem 2rem;
   flex-shrink: 0;
@@ -500,7 +504,7 @@ button.btn:hover {
   justify-content: center;
   padding: 1.5rem 2rem;
   background: var(--color-white);
-  border-radius: 12px;
+  border-radius: 16px;
   border: 2px solid rgba(7, 68, 116, 0.1);
   box-shadow: 0 8px 20px rgba(7, 68, 116, 0.06);
 }
@@ -535,7 +539,7 @@ button.btn:hover {
   flex: 1 1 55%;
   background: var(--color-light-gray);
   padding: 2rem;
-  border-radius: 16px;
+  border-radius: 20px;
 }
 .contact-info p { margin-bottom: 1.25rem; display: flex; align-items: center; gap: 10px; font-size: 1rem; }
 .contact-form-wrap {
@@ -543,7 +547,7 @@ button.btn:hover {
   max-width: 380px;
   background: var(--color-white);
   padding: 1.75rem;
-  border-radius: 16px;
+  border-radius: 20px;
   box-shadow: 0 12px 24px rgba(0,0,0,0.06);
 }
 .contact-page-content { padding: 3rem 5%; min-height: auto; background: var(--color-light-gray); }
@@ -554,7 +558,7 @@ button.btn:hover {
 .modern-form { display: grid; gap: 1rem; }
 .modern-form .btn-primary { padding: 0.85rem 1.5rem; font-size: 1rem; width: 100%; }
 .modern-form .input-group { display: flex; flex-direction: column; gap: 0.5rem; }
-.modern-form input, .modern-form textarea { padding: 0.75rem 1rem; border: 1px solid #e1e5eb; border-radius: 10px; font-family: var(--font-body); font-size: 0.95rem; background: #fdfdfd; transition: all 0.3s ease; }
+.modern-form input, .modern-form textarea { padding: 0.75rem 1rem; border: 1px solid #e1e5eb; border-radius: 14px; font-family: var(--font-body); font-size: 0.95rem; background: #fdfdfd; transition: all 0.3s ease; }
 .modern-form input:focus, .modern-form textarea:focus { outline: none; border-color: var(--color-lightblue); box-shadow: 0 0 0 4px rgba(69, 115, 151, 0.15); background: var(--color-white); }
 .modern-form textarea { min-height: 100px; resize: vertical; }
 
