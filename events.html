@@ -36,29 +36,50 @@
         </section>
 
         <section class="page-section">
-            <div class="info-grid">
-                <div class="info-card">
-                    <h3>ZAPD Annual Conference 2026</h3>
-                    <p style="font-weight: bold; margin-bottom: 10px;">📅 Date: August 15-17, 2026</p>
+            <h2 class="section-title">Upcoming Events</h2>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+                <div class="event-filters">
+                    <button class="filter-btn active" data-filter="all"><i class="fas fa-list"></i> All Events</button>
+                    <button class="filter-btn" data-filter="conference"><i class="fas fa-presentation"></i> Conferences</button>
+                    <button class="filter-btn" data-filter="webinar"><i class="fas fa-video"></i> Webinars</button>
+                    <button class="filter-btn" data-filter="workshop"><i class="fas fa-tools"></i> Workshops</button>
+                </div>
+                <a href="https://calendar.google.com/calendar/embed?src=example@example.com" target="_blank" class="btn btn-secondary" style="flex-shrink: 0;">
+                    <i class="fas fa-calendar"></i> Full Calendar
+                </a>
+            </div>
+
+            <div class="event-cards-container">
+                <div class="info-card event-card" data-category="conference">
+                    <h3><i class="fas fa-presentation"></i> ZAPD Annual Conference 2026</h3>
+                    <p style="font-weight: bold; margin-bottom: 10px; color: var(--color-yellow);"><i class="fas fa-calendar"></i> August 15-17, 2026</p>
                     <p>Join us for three days of insightful lectures, hands-on workshops, and networking with pediatric dentistry professionals from across the region.</p>
+                    <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.6rem 1.5rem; margin-top: 1rem;">Register Now</a>
                 </div>
-                <div class="info-card">
-                    <h3>Webinar: Advances in Pulp Therapy</h3>
-                    <p style="font-weight: bold; margin-bottom: 10px;">📅 Date: September 10, 2026</p>
+                <div class="info-card event-card" data-category="webinar">
+                    <h3><i class="fas fa-video"></i> Webinar: Advances in Pulp Therapy</h3>
+                    <p style="font-weight: bold; margin-bottom: 10px; color: var(--color-yellow);"><i class="fas fa-calendar"></i> September 10, 2026</p>
                     <p>An online session discussing the latest materials and techniques for pediatric pulp therapy. Earn 2 CPD points.</p>
+                    <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.6rem 1.5rem; margin-top: 1rem;">Register Now</a>
                 </div>
-                <div class="info-card">
-                    <h3>Community Dental Camp</h3>
-                    <p style="font-weight: bold; margin-bottom: 10px;">📅 Date: October 5, 2026</p>
+                <div class="info-card event-card" data-category="workshop">
+                    <h3><i class="fas fa-tools"></i> Community Dental Camp</h3>
+                    <p style="font-weight: bold; margin-bottom: 10px; color: var(--color-yellow);"><i class="fas fa-calendar"></i> October 5, 2026</p>
                     <p>Volunteer for our upcoming dental camp in the rural outskirts of Bulawayo. Let's bring smiles to those who need it most.</p>
+                    <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.6rem 1.5rem; margin-top: 1rem;">Volunteer</a>
                 </div>
             </div>
         </section>
 
-        <section class="page-section" style="background: var(--color-white); text-align: center;">
+        <section class="page-section" style="background: var(--color-pastel-mint); text-align: center;">
             <h2 class="section-title">Past Events Archive</h2>
-            <p style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Missed an event? Members can access recordings of past webinars and conference materials in the member portal.</p>
-            <a href="membership.html" class="btn btn-secondary">Become a Member</a>
+            <p style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Explore our rich history of successful events, conferences, and community programs that have made an impact on pediatric oral health in Zimbabwe.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#" class="btn btn-secondary"><i class="fas fa-film"></i> Conference Videos</a>
+                <a href="#" class="btn btn-secondary"><i class="fas fa-file-pdf"></i> Presentation Slides</a>
+                <a href="#" class="btn btn-secondary"><i class="fas fa-images"></i> Photo Gallery</a>
+            </div>
         </section>
     </main>
 
